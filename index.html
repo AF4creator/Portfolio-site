@@ -129,13 +129,15 @@
     <h2>Contact Me</h2>
     <p>Interested in collaborating or connecting with me? Fill out the form below or reach me directly via email.</p>
 
-    <form action="https://formspree.io/f/movpendn" method ="post">
-      
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
-        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="btn">Send Email</button>
-      </form>
+    <form id="contactForm" action="https://formspree.io/f/movpendn" method="POST">
+    <input type="text" id="name" name="name" placeholder="Your Name" required />
+    <input type="email" id="email" name="email" placeholder="Your Email" required />
+    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" class="btn">Send Email</button>
+  </form>
+
+  <!-- status message display -->
+  <p id="form-status"></p>
     
   </section>
 

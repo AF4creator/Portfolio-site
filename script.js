@@ -29,13 +29,11 @@ const form = document.getElementById('contactForm');
   const status = document.getElementById('form-status');
 
   form.addEventListener('submit', async (e) => {
-    e.preventDefault(); // prevent default form reload
+    e.preventDefault(); // prevent page reload
 
-    // collect form data
     const formData = new FormData(form);
 
     try {
-      // send the form data to Formspree
       const response = await fetch(form.action, {
         method: form.method,
         body: formData,
@@ -43,13 +41,16 @@ const form = document.getElementById('contactForm');
       });
 
       if (response.ok) {
-        status.innerHTML = "✅ Your message has been sent successfully!";
-        form.reset(); // clear form fields
+        status.innerHTML = "Your message has been sent successfully!";
+        status.style.color = "green";
+        form.reset();
       } else {
-        status.innerHTML = "❌ Oops! Something went wrong. Please try again.";
+        status.innerHTML = "Oops! Something went wrong. Please try again.";
+        status.style.color = "red";
       }
     } catch (error) {
-      status.innerHTML = "⚠️ Network error. Please check your connection.";
+      status.innerHTML = "Network error. Please check your connection.";
+      status.style.color = "orange";
     }
   });
 
