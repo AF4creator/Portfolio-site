@@ -25,6 +25,34 @@ themeToggle.addEventListener("click", () => {
   localStorage.setItem("theme", isDark ? "dark" : "light");
 });
 
+const form = document.getElementById('contactForm');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault(); // prevent default form reload
+
+    // collect form data
+    const formData = new FormData(form);
+
+    try {
+      // send the form data to Formspree
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        status.innerHTML = "✅ Your message has been sent successfully!";
+        form.reset(); // clear form fields
+      } else {
+        status.innerHTML = "❌ Oops! Something went wrong. Please try again.";
+      }
+    } catch (error) {
+      status.innerHTML = "⚠️ Network error. Please check your connection.";
+    }
+  });
+
 //-----------------------------------------------------------------
 const canvas = document.getElementById("interactive-bg");
 const ctx = canvas.getContext("2d");
