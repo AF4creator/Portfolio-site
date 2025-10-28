@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anto Felix A | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!--bg interactive-->
+  <canvas id="interactive-bg"></canvas>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Anto Felix A</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!--<img src="assets/profile.jpg" alt="Anto Felix A" class="profile-pic">-->
+    <h1>Hi, I'm <span>Anto Felix A</span></h1>
+    <p>An aspiring <strong>SOC Analyst</strong> currently pursuing <strong>MCA (Final Year)</strong>.</p>
+
+    <a href="#projects" class="btn">💼 View My Work</a>
+    <a href="https://drive.google.com/file/d/1469eNYi6ktQlhzZ94-FNhW_jcTeMjEgr/view?usp=drive_link" target="_blank" class="btn outline">📄 View Resume</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm <strong>Anto Felix A</strong>, a dedicated and detail-oriented cybersecurity enthusiast with a passion 
+      for protecting digital environments. Currently pursuing my <strong>Master of Computer Applications (MCA)</strong>, 
+      I aim to specialize as a <strong>Security Operations Center (SOC) Analyst</strong>.
+    </p>
+    <p>
+      My interests revolve around network defense, incident response, threat analysis, and system monitoring. 
+      I enjoy exploring cybersecurity tools, learning about real-world security incidents, and continuously 
+      improving my technical and analytical skills.
+    </p>
+    <p>
+      You can connect with me on 
+      <a href="https://www.linkedin.com/in/anto-felix/" target="_blank" rel="noopener">LinkedIn</a> 
+      for collaboration and professional discussions.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <h3>🛡️ Cybersecurity</h3>
+        <p>Network Security, SOC, Threat Detection, Incident Response</p>
+      </div>
+      <div class="skill">
+        <h3>💻 Technical</h3>
+        <p>Windows, Linux, Python, Wireshark</p>
+      </div>
+      <div class="skill">
+        <h3>🎓 Academic & Soft Skills</h3>
+        <p>Research, Teamwork, Problem-Solving, Communication</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+<section id="experience" class="section">
+  <h2>Experience</h2>
+  <div class="experience-item">
+    <h3>Cybersecurity Analyst Intern – ShadowFox Technologies</h3>
+    <p class="duration">May 2025 – June 01,2025</p>
+    <ul>
+      <li>Gained hands-on experience with foundational cybersecurity tasks including port scanning, directory enumeration, and network traffic analysis.</li>
+      <li>Used <strong>Wireshark</strong> to analyze packet captures and extract user login credentials from insecure (HTTP) communications.</li>
+      <li>Identified directory leakage vulnerabilities that could expose sensitive files or configuration data on web servers.</li>
+      <li>Created basic security reports and summaries for observed vulnerabilities and their mitigations.</li>
+    </ul>
+  </div>
+  <br>
+  <div class="hands-on">
+    <h3>Hands-on Practice Platforms</h3>
+    <ul>
+      <li><strong>TryHackMe</strong> – Practicing real-world cybersecurity scenarios including network analysis, malware investigation, and SOC fundamentals.</li>
+      <li><strong>BTLO (Blue Team Labs Online)</strong> – Solving blue-team focused challenges related to log analysis, threat hunting, and digital forensics in simulated SOC environments.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="section">
+  <h2>Certifications</h2>
+  <ul class="cert-list">
+    <li><strong>Python Bootcamp</strong> – LetsUpgrade</li>
+    <li><strong>Introduction to Cybersecurity</strong> – Simplilearn </li>
+    <li><strong>Email Security Awareness Quiz</strong> – Ministry of Electronics and IT (MeitY)</li>
+    <li><strong>Introduction to Critical Infrastructure Protection (CIP)</strong> – OPSWAT Academy</li>
+    <li><strong>Cybersecurity Threats & Mitigation Overview</strong> – Microsoft Learn</li>
+  </ul>
+</section>
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <img src="asset/wireshark.png" alt="Network Analyzer Tool" />
+        <h3>Network Traffic Analyzer</h3>
+        <p>
+          Network traffic analysis using Wireshark tool to identify suspicious packets through HTTP protocol.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Interested in collaborating or connecting with me? Fill out the form below or reach me directly via email.</p>
+
+    <form action="https://formsubmit.co/af4creator@gmail.com" method ="post">
+      
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Email</button>
+    
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Anto Felix A. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
