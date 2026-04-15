@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anto Felix A | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--bg interactive-->
+  <canvas id="interactive-bg"></canvas>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Anto Felix A</div>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="asset/Profile_photo-1.png" alt="Anto Felix A" class="profile-pic">
+    <h1>Hi, I'm <span>Anto Felix A</span></h1>
+    <h2><span id="typing"></span></h2>
+    <p>MCA student with a strong foundation in Python, JavaScript, and MySQL. Experienced in building secure web
+      applications and AI-based security tools.</p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">💼 View My Work</a>
+      <a href="https://drive.google.com/file/d/1bU7vwbUE7k_PrARPfDaclmsxx_BHHaHl/view?usp=drive_link" target="_blank"
+        class="btn outline">📄 View Resume </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>
+      I'm <strong>Anto Felix A</strong>, a dedicated and detail-oriented cybersecurity enthusiast with a passion
+      for protecting digital environments. Currently pursuing my <strong>Master of Computer Applications (MCA)</strong>,
+      I aim to specialize as a <strong>Security Operations Center (SOC) Analyst</strong>.
+    </p>
+    <p>
+      I am seeking an entry-level role to apply my technical skills and a security-focused mindset in a professional
+      environment.
+    </p>
+    <p>
+      You can connect with me on
+      <a href="https://www.linkedin.com/in/anto-felix/" target="_blank" rel="noopener">LinkedIn</a>
+      or check out my repositories on
+      <a href="https://github.com/AF4creator" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+  </section>
+
+  <!-- Education map Section -->
+  <section id="education" class="section reveal">
+    <h2>Education Roadmap</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Master of Computer Applications (MCA)</h3>
+          <p><strong>Institution:</strong> Arul Anandar College(AAC), Madurai </p>
+          <p><strong>Year:</strong> 2024 – 2026</p>
+          <p><strong>Focus:</strong> Specified Computer Applications</p>
+          <p><strong>CGPA:</strong> 8.64</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Bachelor of Science in Physics</h3>
+          <p><strong>Institution:</strong> Arul Anandar College(AAC), Madurai </p>
+          <p><strong>Year:</strong> 2020 – 2023</p>
+          <p><strong>Focus:</strong> Electronics, Analytical Thinking, and Research</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Higher Secondary Education (HSC)</h3>
+          <p><strong>Institution:</strong> St.Britto Higher Secondary School</p>
+          <p><strong>Year:</strong> 2018 – 2020</p>
+          <p><strong>Stream:</strong> Bio-Maths (Physics, Chemistry, Mathematics, Biology)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>💻 Programming & Web</h3>
+        <div class="skill-item">
+          <span class="skill-name">Python <span>85%</span></span>
+          <div class="progress-bar">
+            <div class="progress" data-width="85%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">JavaScript & HTML/CSS <span>80%</span></span>
+          <div class="progress-bar">
+            <div class="progress" data-width="80%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">PHP & Flask <span>70%</span></span>
+          <div class="progress-bar">
+            <div class="progress" data-width="70%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>🗄️ Database & Tools</h3>
+        <div class="skill-item">
+          <span class="skill-name">MySQL / SQL <span>80%</span></span>
+          <div class="progress-bar">
+            <div class="progress" data-width="80%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Linux <span>75%</span></span>
+          <div class="progress-bar">
+            <div class="progress" data-width="75%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Git / GitHub <span>85%</span></span>
+          <div class="progress-bar">
+            <div class="progress" data-width="85%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>🛡️ Cybersecurity & AI</h3>
+        <div class="skill-item">
+          <span class="skill-name">SOC Concepts & Vulnerability Assessment <span>80%</span></span>
+          <div class="progress-bar">
+            <div class="progress" data-width="80%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Networking Fundamentals <span>85%</span></span>
+          <div class="progress-bar">
+            <div class="progress" data-width="85%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Basic ML (TF-IDF, Logistic Regression) <span>65%</span></span>
+          <div class="progress-bar">
+            <div class="progress" data-width="65%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section reveal">
+    <h2>Experience</h2>
+    <div class="experience-grid">
+      <div class="experience-item card">
+        <h3>Cybersecurity Analyst Intern – ShadowFox Technologies</h3>
+        <p class="duration">May 2025 – May 31, 2025</p>
+        <ul class="clean-list">
+          <li>Gained hands-on experience with foundational cybersecurity tasks including port scanning, directory
+            enumeration, and network traffic analysis.</li>
+          <li>Used <strong>Wireshark</strong> to analyze packet captures and extract user login credentials from
+            insecure
+            (HTTP) communications.</li>
+          <li>Identified directory leakage vulnerabilities that could expose sensitive files or configuration data on
+            web
+            servers.</li>
+          <li>Created basic security reports and summaries for observed vulnerabilities and their mitigations.</li>
+        </ul>
+      </div>
+
+      <div class="hands-on card">
+        <h3>Hands-on Practice Platforms</h3>
+        <ul class="clean-list">
+          <li><strong>TryHackMe</strong> – Practicing real-world cybersecurity scenarios including network analysis,
+            malware investigation, and SOC fundamentals.</li>
+          <li><strong>BTLO (Blue Team Labs Online)</strong> – Solving blue-team focused challenges related to log
+            analysis, threat hunting, and digital forensics in simulated SOC environments.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section reveal">
+    <h2>Certifications</h2>
+    <ul class="cert-list">
+      <li><strong>Python Bootcamp</strong> – LetsUpgrade</li>
+      <li><strong>Introduction to Cybersecurity</strong> – Simplilearn </li>
+      <li><strong>Email Security Awareness Quiz</strong> – Ministry of Electronics and IT (MeitY)</li>
+      <li><strong>Introduction to Critical Infrastructure Protection (CIP)</strong> – OPSWAT Academy</li>
+      <li><strong>Cybersecurity Threats & Mitigation Overview</strong> – Microsoft Learn</li>
+    </ul>
+  </section>
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="section reveal">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project card reveal-item">
+        <h3>AI-Based Email Quarantine Web Application</h3>
+        <p class="duration">Final Year Project | March 2026</p>
+        <p>Developed an AI-powered system using TF-IDF and Logistic Regression to detect spam and phishing emails.</p>
+        <p>Implemented IMAP-based email retrieval, automated risk scoring, and an admin dashboard.</p>
+        <p class="tech-stack"><strong>Tech Stack:</strong> Python, Flask, MySQL, HTML, CSS, IMAP</p>
+        <div class="card-buttons">
+          <a href="https://antofelix.pythonanywhere.com" target="_blank" class="btn btn-small">View
+            Project</a>
+          <a href="https://github.com/AF4creator/Ai-Email-Quarantine-System" target="_blank"
+            class="btn btn-small outline">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project card reveal-item">
+        <h3>Department Blog System</h3>
+        <p class="duration">Team Project | Sep 2025 – Oct 2025</p>
+        <p>Built a secure blogging and Q&A platform with authentication, role-based access control, moderation features,
+          and a rich text editor.</p>
+        <p class="tech-stack"><strong>Tech Stack:</strong> HTML, CSS, PHP, MySQL, Git</p>
+        <div class="card-buttons">
+          <a href="asset/Departmental Blog Site - video demo.mp4" target="_blank" class="btn btn-small">View
+            Project</a>
+          <a href="#" target="_blank" class="btn btn-small outline">GitHub</a>
+        </div>
+      </div>
+      <div class="project card reveal-item">
+        <h3>Personal Portfolio Website</h3>
+        <p class="duration">October 2025</p>
+        <p>Developed a responsive portfolio website to showcase projects, improving UI/UX with structured layout and
+          interactive components.</p>
+        <p class="tech-stack"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+        <div class="card-buttons">
+          <a href="https://af4creator.github.io/Portfolio-site/" target="_blank" class="btn btn-small">View
+            Project</a>
+          <a href="https://github.com/AF4creator/Portfolio-site" target="_blank"
+            class="btn btn-small outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section reveal">
+    <h2>Contact Me</h2>
+    <p>Interested in collaborating or connecting with me? Fill out the form below or reach me directly at <a
+        href="mailto:antofelix4444@gmail.com"
+        style="color: var(--accent); text-decoration: none;">antofelix4444@gmail.com</a>.</p>
+
+    <form id="contactForm" action="https://formspree.io/f/movpendn" method="POST">
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Email</button>
+    </form>
+
+    <!-- status message display -->
+    <p id="form-status"></p>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Anto Felix A | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
